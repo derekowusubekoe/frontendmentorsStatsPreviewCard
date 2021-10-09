@@ -9,10 +9,32 @@
     padding: 4rem;
 
     h1 {
+      font-family: "Inter", sans-serif;
       font-size: 2rem;
+      font-weight: 700;
+      color: $whiteMainHeadingStats;
       span {
         color: $softVioletAccent;
         font-size: 2rem;
+      }
+    }
+    p {
+      font-family: "Inter", sans-serif;
+      font-weight: 400;
+      color: $slightlyTransparentWhiteMain;
+      padding: 2rem 0 1rem 0;
+      line-height: 1.6;
+    }
+
+    .stats {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 2rem 0 0.4rem 0;
+
+      .stats_num {
+        font-family: "Lexend Deca", sans-serif;
+        color: $whiteMainHeadingStats;
       }
     }
   }

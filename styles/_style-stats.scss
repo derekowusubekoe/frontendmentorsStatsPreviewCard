@@ -1,7 +1,13 @@
 .stats {
   display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2rem 0 0.4rem 0;
 
   .stats-info {
-    font-family: "Lexend Deca", sans-serif;
+    .stats_num {
+      font-family: "Lexend Deca", sans-serif;
+      color: $whiteMainHeadingStats;
+    }
   }
 }
