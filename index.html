@@ -13,7 +13,7 @@
     />
 
     <title>Frontend Mentor | Stats Preview Card Component</title>
-    <link rel="stylesheet" href="/dist/css/style.css" />
+    <link rel="stylesheet" href="./dist/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,30 +22,31 @@
     />
   </head>
   <body>
-    <main>
-      <section class="card">
-        <div class="card-details">
+    <main class="container">  <!--container-->
+      <section class="preview-card">  <!--card-container-->
+        <div class="preview-card__details">  <!--content left-->
           <h1>Get <span>insights</span> that help your business grow.</h1>
-          <p>
+          <p class="desc">
             Discover the benefits of data analytics and make better decisions
             regarding revenue, customer experience, and overall efficiency.
           </p>
-          <div class="stats">
+          <div class="stats-container">
             <div class="stats-info">
-              <div class="stats-num">10k+</div>
-              <div class="stats-desc">companies</div>
+              <h3>10k+</h3>
+              <h6>companies</h6>
             </div>
             <div class="stats-info">
-              <div class="stats-num">314</div>
-              <div class="stats-desc">templates</div>
+              <h3>314</h3>
+              <h6>templates<h6>
             </div>
             <div class="stats-info">
-              <div class="stats-num">12M+</div>
-              <div class="stats-desc">queries</div>
+              <h3>12M+<h3>
+              <h6>queries<h6>
             </div>
           </div>
         </div>
-        <div class="card-bg__image"></div>
+        <div class="preview-card__image">
+        </div>
       </section>
     </main>
     <!-- <div class="attribution">

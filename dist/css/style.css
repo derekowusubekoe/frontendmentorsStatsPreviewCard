@@ -1,0 +1,183 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  color: #fff;
+  background: #090b1a;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.preview-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  max-width: 1440px;
+  height: 600px;
+  background-color: #1b1938;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.preview-card .preview-card__details {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5.688rem 5.875rem;
+}
+
+.preview-card .preview-card__details h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 3.125rem;
+  font-weight: 700;
+  line-height: 3.75rem;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.preview-card .preview-card__details h1 span {
+  color: #aa5cdb;
+  font-size: 3.125rem;
+}
+
+.preview-card .preview-card__details .desc {
+  font-family: "Inter", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 1.5rem 8rem 3.5rem 0;
+  line-height: 2.063rem;
+}
+
+.preview-card .preview-card__details .stats-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 3rem 11rem 3.5rem 0;
+}
+
+.preview-card .preview-card__details .stats-container .stats-info h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.063rem;
+  color: white;
+}
+
+.preview-card .preview-card__details .stats-container .stats-info h6 {
+  font-size: 1.063rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  font-family: "Lexend Deca", sans-serif;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.preview-card .preview-card__image {
+  width: 50%;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(170, 92, 219, 0.5)), to(rgba(170, 92, 219, 0.5))), url("/images/image-header-desktop.jpg") center no-repeat;
+  background: linear-gradient(0deg, rgba(170, 92, 219, 0.5) 0%, rgba(170, 92, 219, 0.5) 100%), url("/images/image-header-desktop.jpg") center no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 1140px) {
+  .container {
+    padding: 2rem;
+    text-align: center;
+  }
+  .container .preview-card {
+    width: 100%;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .container .preview-card .preview-card__image {
+    width: 50%;
+    height: 100%;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(170, 92, 219, 0.5)), to(rgba(170, 92, 219, 0.5))), url("/images/image-header-mobile.jpg") center no-repeat;
+    background: linear-gradient(0deg, rgba(170, 92, 219, 0.5) 0%, rgba(170, 92, 219, 0.5) 100%), url("/images/image-header-mobile.jpg") center no-repeat;
+    background-size: cover;
+  }
+  .container .preview-card .preview-card__details {
+    width: 100%;
+    padding: 3rem;
+  }
+  .container .preview-card .preview-card__details h1 {
+    font-size: 1.813rem;
+    line-height: 35px;
+    margin-bottom: 1.25rem;
+    color: white;
+  }
+  .container .preview-card .preview-card__details h1 span {
+    color: #aa5cdb;
+    font-size: 1.813rem;
+  }
+  .container .preview-card .preview-card__details .desc {
+    font-family: "Inter", sans-serif;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 40px;
+    padding: 0 2rem;
+  }
+  .container .preview-card .preview-card__details .stats-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container .preview-card .preview-card__image {
+    width: 100%;
+    height: 320px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

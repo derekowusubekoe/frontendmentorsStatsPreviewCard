@@ -1,0 +1,17 @@
+// Primary Color Variables
+
+$veryDarkBlueMainBg: hsl(233, 47%, 7%);
+$darkDesaturatedBlueCardBg: hsl(244, 38%, 16%);
+$softVioletAccent: hsl(277, 64%, 61%);
+
+// Neutral Color Variables
+
+$whiteMainHeadingStats: hsl(0, 0%, 100%);
+$slightlyTransparentWhiteMain: hsla(0, 0%, 100%, 0.75);
+$slightlyTransparentWhiteStats: hsla(0, 0%, 100%, 0.6);
+
+//SCSS file imports
+@import "default";
+@import "style-main";
+@import "style-card";
+@import "media_query_1140.scss";
